@@ -65,11 +65,11 @@ git push -u origin main
    - `APPROVER_PASSWORD` → Kiran's password
 4. **Apply**. When the deploy goes green, open `https://<service>.onrender.com/health`. It should show `{"ok":true}`.
 
-The service is named `carreq-server`, so its URL is usually `https://carreq-server.onrender.com`. **If Render gives it a different URL**, put that URL in `app/eas.json` under `EXPO_PUBLIC_API_URL`.
+The service is named `carreq-server`, so its URL is usually `https://carrequest.onrender.com`. **If Render gives it a different URL**, put that URL in `app/eas.json` under `EXPO_PUBLIC_API_URL`.
 
 ### Optional: keep it awake
 
-On the free plan Render sleeps after 15 minutes without traffic. The first action after that takes up to a minute, and the app shows "Waking up the server…" while it waits. To avoid the wait, create a free job at **cron-job.org** that opens `https://carreq-server.onrender.com/health` **every 10 minutes**. One always-on service uses about 744 of the 750 free hours a month.
+On the free plan Render sleeps after 15 minutes without traffic. The first action after that takes up to a minute, and the app shows "Waking up the server…" while it waits. To avoid the wait, create a free job at **cron-job.org** that opens `https://carrequest.onrender.com/health` **every 10 minutes**. One always-on service uses about 744 of the 750 free hours a month.
 
 Push notifications are delivered by Expo and Firebase, so they don't depend on the server being awake. A request does wake the server up.
 

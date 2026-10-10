@@ -11,7 +11,7 @@
         "buildType": "apk"
       },
       "env": {
-        "EXPO_PUBLIC_API_URL": "https://carreq-server.onrender.com"
+        "EXPO_PUBLIC_API_URL": "https://carrequest.onrender.com"
       }
     }
   }
