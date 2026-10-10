@@ -1,0 +1,9 @@
+node_modules/
+server/.env
+server/data/
+app/.expo/
+app/dist/
+.export-check/
+# Firebase service-account private keys (upload to EAS, never commit)
+*firebase-adminsdk*.json
+service-account*.json

@@ -1,0 +1,39 @@
+# Render Blueprint: free web service for the backend.
+# In Render: New + -> Blueprint -> pick this repo. You'll be asked for the values marked sync: false.
+services:
+  - type: web
+    name: carreq-server
+    runtime: node
+    plan: free
+    region: singapore
+    rootDir: server
+    buildCommand: npm ci --omit=dev
+    startCommand: npm start
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: NODE_ENV
+        value: production
+      # Dates like "today" and "in the past" are judged in this timezone.
+      - key: TZ
+        value: Asia/Karachi
+      - key: JWT_SECRET
+        generateValue: true
+      - key: TURSO_DATABASE_URL
+        sync: false
+      - key: TURSO_AUTH_TOKEN
+        sync: false
+      - key: REQUESTER_USERNAME
+        value: hashim
+      - key: REQUESTER_NAME
+        value: Hashim
+      - key: REQUESTER_PASSWORD
+        sync: false
+      - key: APPROVER_USERNAME
+        value: kiran
+      - key: APPROVER_NAME
+        value: Kiran
+      - key: APPROVER_PASSWORD
+        sync: false

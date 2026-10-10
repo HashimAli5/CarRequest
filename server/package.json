@@ -1,0 +1,27 @@
+{
+  "name": "carreq-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local backend for \"Can I Take the Car?\"",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env --disable-warning=ExperimentalWarning src/index.js",
+    "dev": "node --watch --env-file-if-exists=.env --disable-warning=ExperimentalWarning src/index.js",
+    "reset-db": "node --env-file-if-exists=.env --disable-warning=ExperimentalWarning src/resetDb.js",
+    "test": "node --env-file-if-exists=.env --disable-warning=ExperimentalWarning src/smokeTest.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.18.0",
+    "bcryptjs": "^2.4.3",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "socket.io-client": "^4.8.4"
+  }
+}
