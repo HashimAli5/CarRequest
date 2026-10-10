@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "144554539007",
+    "project_id": "carreq",
+    "storage_bucket": "carreq.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:144554539007:android:15ba9041fe9fbb511999ca",
+        "android_client_info": {
+          "package_name": "com.family.canitakethecar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcb8FH83vXEERhQ8nHEshdfONNHN73i6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
