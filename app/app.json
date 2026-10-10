@@ -47,6 +47,13 @@
     ],
     "experiments": {
       "typedRoutes": false
+    },
+    "owner": "hashimali5",
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "b519d23b-3514-4039-a600-a431a935c298"
+      }
     }
   }
 }
